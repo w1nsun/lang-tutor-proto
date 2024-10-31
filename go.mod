@@ -1,3 +1,3 @@
-module w1nsun/lang-tutor-proto
+module github.com/w1nsun/lang-tutor-proto
 
 go 1.23.2
