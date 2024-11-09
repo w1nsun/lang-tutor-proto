@@ -12,11 +12,3 @@ How to push it to repo
 git tag v0.0.1
 git push origin v0.0.1
 ```
-
-
-## Release ne JAVA package
-
-```
-mvn release:prepare
-mvn release:perform
-```
