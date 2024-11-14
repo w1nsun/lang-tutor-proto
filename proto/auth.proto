@@ -3,8 +3,6 @@ syntax = "proto3";
 package auth;
 
 option go_package = 'w1nsun.lang-tutor.v1;authv1';
-option java_multiple_files = true;
-option java_package = "com.winsun.linguatutor.proto.auth";
 
 service Auth {
   rpc RegisterStudent(RegisterStudentRequest) returns (RegisterStudentResponse);
@@ -44,4 +42,13 @@ message LogoutStudentRequest {
 message LogoutStudentResponse {
   string student_id = 1;
   string status = 2;
+}
+
+message AppValidationError {
+  string field = 1;
+  string msg = 2;
+}
+
+message AppValidationErrors {
+  repeated AppValidationError errors = 1;
 }
